@@ -1,9 +1,6 @@
 # git
 
 ----
-## table of contents
-
-- [table of contents](#table-of-contents)
 - [commit](#commit)
     * [author](#author)
         + [override author for next commits](#override-author-for-next-commits)
@@ -18,7 +15,6 @@
         + [set locally user name](#set-locally-user-name)
         + [set locally email](#set-locally-email)
 - [resources](#resources)
-
 ----
 
 ## commit

@@ -1,3 +1,12 @@
+# gpg 
+
+----
+* [list public and private gpg keys](#list-public-and-private-gpg-keys)
+* [generate gpg key](#generate-gpg-key)
+* [output gpg public key](#output-gpg-public-key)
+* [troubleshooting mac gpg for below error](#troubleshooting-mac-gpg-for-below-error)
+* [resource](#resource)
+----
 
 ### list public and private gpg keys
 
@@ -27,14 +36,13 @@ error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 
-Solution: [Source](https://stackoverflow.com/questions/39494631/gpg-failed-to-sign-the-data-fatal-failed-to-write-commit-object-git-2-10-0)
+solution [source](https://stackoverflow.com/questions/39494631/gpg-failed-to-sign-the-data-fatal-failed-to-write-commit-object-git-2-10-0)
 ```shell
 brew upgrade gnupg
 brew install pinentry-mac
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 killall gpg-agent
 ```
-
 
 ### resource
 - [managing commit signature verification](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification)
