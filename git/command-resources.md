@@ -13,12 +13,12 @@
 
 ### override author for next commits
 ```shell
-git commit --author="ShivakumarSwamy <shivakumarswamy.bg@gmail.com>"
+git commit --author="YOUR_AWESOME_NAME <YOUR_AWESOME_EMAIL>"
 ```
 
 ### amend author of last commit
 ```shell
-git commit --amend --author="ShivakumarSwamy <shivakumarswamy.bg@gmail.com>"
+git commit --amend --author="YOUR_AWESOME_NAME <YOUR_AWESOME_EMAIL>"
 ```
 
 ### amend author from root
@@ -32,6 +32,18 @@ git commit --amend --author="ShivakumarSwamy <shivakumarswamy.bg@gmail.com>"
 4. continue rebase: `git rebase --continue`
 
 5. repeat 3 & 4 n times until all the commits are edited
+
+### set locally gpg sign
+
+```shell
+git config commit.gpgsign true
+```
+
+### set locally gpg signing key id
+
+```shell
+git config user.signingkey <GPG_KEY_ID>
+```
 
 ### resources
 - [how can i change the author name / email of a commit?](https://www.git-tower.com/learn/git/faq/change-author-name-email/)
