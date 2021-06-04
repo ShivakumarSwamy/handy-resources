@@ -13,3 +13,7 @@ docker save --output <YOUR_TAR_NAME> <YOUR_IMAGE>
 
 docker save -o <YOUR_TAR_NAME> <YOUR_IMAGE>
 ```
+
+## resources
+
+- [images and layers](https://docs.docker.com/storage/storagedriver/#images-and-layers)
