@@ -70,7 +70,7 @@ kubectl get pod
 
 #### get pods from specific namespace
 ```shell
-kubectl -namespace <YOUR_NAMESPACE> get pods
+kubectl --namespace <YOUR_NAMESPACE> get pods
 ```
 
 #### get cronjobs in current namespace 
