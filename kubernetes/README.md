@@ -1,6 +1,7 @@
 # kubernetes
 
 ----
+undefined [tip](#tip)
 - [config](#config)
     * [context](#context)
         + [current context](#current-context)
@@ -19,12 +20,25 @@
         + [get replicasets in current namespace](#get-replicasets-in-current-namespace)
         + [get services in current namespace](#get-services-in-current-namespace)
         + [get ingress in current namespace](#get-ingress-in-current-namespace)
+    * [delete resources](#delete-resources)
+        + [delete a pod in current namespace](#delete-a-pod-in-current-namespace)
+        + [delete a deployment in current namespace](#delete-a-deployment-in-current-namespace)
+        + [delete a service in current namespace](#delete-a-service-in-current-namespace)
+        + [delete a cronjobs in current namespace](#delete-a-cronjobs-in-current-namespace)
+        + [delete a job in current namespace](#delete-a-job-in-current-namespace)
+        + [delete a statefulset in current namespace](#delete-a-statefulset-in-current-namespace)
+        + [delete a replicaset in current namespace](#delete-a-replicaset-in-current-namespace)
 - [server](#server)
     + [get supported api resources](#get-supported-api-resources)
     + [get supported api versions](#get-supported-api-versions)
 - [client and server](#client-and-server)
     + [get client and server version](#get-client-and-server-version)
 - [resources](#resources)
+----
+
+----
+# tip
+- Prefer passing always the namespace in the command, which will act as a caution showing explicitly the namespace we are working   
 ----
 
 ## config
@@ -124,6 +138,58 @@ kubectl get services
 
 kubectl get service
 kubectl get svc 
+```
+
+### delete resources
+
+#### delete a pod in current namespace
+```shell
+kubectl delete pods <POD_NAME>
+
+kubectl delete pod <POD_NAME>
+```
+
+#### delete a deployment in current namespace
+```shell
+kubectl delete deployments.apps <DEPLOYMENT_NAME>
+
+kubectl delete deploy <DEPLOYMENT_NAME>
+```
+
+#### delete a service in current namespace
+```shell
+kubectl delete services <SERVICE_NAME>
+
+kubectl delete service <SERVICE_NAME>
+kubectl delete svc <SERVICE_NAME>
+```
+
+#### delete a cronjobs in current namespace
+```shell
+kubectl delete cronjobs.batch <CRON_JOB_NAME>
+
+kubectl delete cronjobs <CRON_JOB_NAME>
+```
+
+#### delete a job in current namespace
+```shell
+kubectl delete jobs.batch <JOB_NAME>
+
+kubectl delete jobs <JOB_NAME>
+```
+
+#### delete a statefulset in current namespace
+```shell
+kubectl delete statefulsets.apps <STATEFULSET_NAME>
+
+kubectl delete sts <STATEFULSET_NAME>
+```
+
+#### delete a replicaset in current namespace
+```shell
+kubectl delete replicasets.apps <REPLICASET_NAME>
+
+kubectl delete rs <REPLICASET_NAME>
 ```
 
 ## server
