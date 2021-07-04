@@ -59,6 +59,8 @@ kubectl config view --minify
 #### get all pods in all namespaces
 ```shell
 kubectl get pods --all-namespaces
+
+kubectl get pods -A
 ```
 
 #### get all pods in current namespace
