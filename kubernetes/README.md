@@ -1,7 +1,7 @@
 # kubernetes
 
 ----
-undefined [tip](#tip)
+- [tip](#tip)
 - [config](#config)
     * [context](#context)
         + [current context](#current-context)
@@ -37,8 +37,8 @@ undefined [tip](#tip)
 ----
 
 ----
-# tip
-- Prefer passing always the namespace in the command, which will act as a caution showing explicitly the namespace we are working   
+## tip
+- Prefer passing always the namespace in the command, which will act as a caution showing explicitly the namespace we are working on   
 ----
 
 ## config
