@@ -134,10 +134,7 @@ kubectl get svc
 
 #### get ingress in current namespace
 ```shell
-kubectl get services
-
-kubectl get service
-kubectl get svc 
+kubectl get ingress
 ```
 
 ### delete resources
