@@ -189,6 +189,56 @@ kubectl delete replicasets.apps <REPLICASET_NAME>
 kubectl delete rs <REPLICASET_NAME>
 ```
 
+### create resources
+
+#### create a simple deployment
+```shell
+kubectl create deployment go-helloworld --image=<IMAGE_NAME>
+```
+
+#### create a deployment with 3 replicas in a namespace
+```shell
+kubectl create deployment -n demo nginx-apline --image=nginx:alpine --replicas=3
+```
+
+#### create a namespace
+```shell
+kubectl create namespace <NAMESPACE_NAME>
+```
+
+#### create a config map
+```shell
+kubectl create configmap <CONFIGMAP_NAME> --from-literal=<KEY>=<VALUE>
+```
+
+### run resources
+
+#### create a headless pod with an interactive shell and never restart
+```shell
+kubectl run -it <POD_NAME> --image=<IMAGE_NAME> --restart=Never
+```
+
+### label resource
+
+#### label a namespace
+```shell
+kubectl label namespaces <NAMESPACE_NAME> <LABEL_KEY>=<LABEL_VALUE>
+```
+
+### expose resources
+
+#### expose a deployment on port 8111
+```shell
+kubectl expose deployment <DEPLOYMENT_NAME> --port=811
+```
+
+## global
+
+### options that can be used with any command
+```shell
+kubectl options
+```
+
 ## server
 
 #### get supported api resources 
