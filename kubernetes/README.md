@@ -39,14 +39,18 @@
         + [label a namespace](#label-a-namespace)
     * [expose resources](#expose-resources)
         + [expose a deployment on port 8111](#expose-a-deployment-on-port-8111)
+- [manifests](#manifests)
+    + [apply manifest(s)](#apply-manifests)
+    + [delete manifest(s)](#delete-manifests)
 - [global](#global)
-    * [options that can be used with any command](#options-that-can-be-used-with-any-command)
+    + [options that can be used with any command](#options-that-can-be-used-with-any-command)
 - [server](#server)
     + [get supported api resources](#get-supported-api-resources)
     + [get supported api versions](#get-supported-api-versions)
 - [client and server](#client-and-server)
     + [get client and server version](#get-client-and-server-version)
 - [resources](#resources)
+- [terms](#terms)
 ----
 
 ----
@@ -245,9 +249,33 @@ kubectl label namespaces <NAMESPACE_NAME> <LABEL_KEY>=<LABEL_VALUE>
 kubectl expose deployment <DEPLOYMENT_NAME> --port=811
 ```
 
+## manifests
+
+#### apply manifest(s)
+```shell
+kubectl apply -f <MANIFEST_FILE_YAML_OR_JSON>
+
+# apply manifests found in a folder
+kubectl apply -f <LOCATION_OF_MANIFEST_FOLDER>
+
+# apply 2 manifests
+kubectl apply -f <MANIFEST_FILE_YAML_OR_JSON_1>,<MANIFEST_FILE_YAML_OR_JSON_2>
+```
+
+#### delete manifest(s)
+```shell
+kubectl delete -f <MANIFEST_FILE_YAML_OR_JSON>
+
+# delete manifests found in a folder
+kubectl delete -f <LOCATION_OF_MANIFEST_FOLDER>
+
+# delete 2 manifests
+kubectl delete -f <MANIFEST_FILE_YAML_OR_JSON_1>,<MANIFEST_FILE_YAML_OR_JSON_2>
+```
+
 ## global
 
-### options that can be used with any command
+#### options that can be used with any command
 ```shell
 kubectl options
 ```
@@ -275,3 +303,7 @@ kubectl version
 
 - [kubectl cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - [kubectx + kubens](https://github.com/ahmetb/kubectx)
+
+## terms
+- headless pod: pods that are not managed
+- manifest: k8s api object spec in YAML or JSON 
