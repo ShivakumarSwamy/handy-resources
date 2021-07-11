@@ -93,7 +93,7 @@ System.out.println(intNumber);
 ```
 
 ## method
-- reusable block of code which is associated with a class ot object
+- reusable block of code which is associated with a class or object
 ```text
 access          |-- return type
 modifier --|    |     |-- method name             |-- method parameter
