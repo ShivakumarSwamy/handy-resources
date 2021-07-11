@@ -105,9 +105,9 @@ sum(1, 2); // invoking or calling a method
 ```
 
 ## resources
-- [JShell](https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8)
-- [Statement](https://www.programiz.com/java-programming/expressions-statements-blocks)
-- [Udacity Fundamentals Glossary](https://video.udacity-data.com/topher/2021/January/5fef31c7_jpnd-c1-java-fundamentals-glossary/jpnd-c1-java-fundamentals-glossary.pdf)
+- [jshell](https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8)
+- [statement](https://www.programiz.com/java-programming/expressions-statements-blocks)
+- [udacity java fundamentals glossary](https://video.udacity-data.com/topher/2021/January/5fef31c7_jpnd-c1-java-fundamentals-glossary/jpnd-c1-java-fundamentals-glossary.pdf)
 
 ## terms
 - statement: a complete unit of execution
