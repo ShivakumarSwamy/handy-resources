@@ -10,6 +10,7 @@
 - [type casting](#type-casting)
 - [truncation](#truncation)
 - [method](#method)
+- [stack and heap memory](#stack-and-heap-memory)
 - [resources](#resources)
 - [terms](#terms)
 ----
@@ -102,6 +103,31 @@ modifier --|    |     |-- method name             |-- method parameter
         }
 
 sum(1, 2); // invoking or calling a method
+```
+
+## stack and heap memory
+- stack (last-in-first-out) and heap are two different memory regions of java
+  
+- stack used for primitives and object references
+- heap to store object itself
+  
+- items in stack stay until the method is running
+- items in heap stay until object reference is not their anymore or application exits
+
+```text
+// A rough overview of memory region and code co-relation 
+                                             |---------------------------------------------------------|
+                                             |                        Memory                           |
+public static void main(String[] args) {     ||--------------------------------|  |-------------------||
+    int j = 23;                              ||            Stack               |  |       Heap        ||
+    Object object = new Object();            || Object object -> Object@1341 --|--|----> Id:1341      ||
+                                             ||                                |         Type:Object  ||
+}                                            || int j = 23                     |  |                   || 
+                                             ||                                |  |                   ||
+                                             || main                           |  |                   ||
+                                             ||--------------------------------|  |-------------------||
+                                             |                                                         |
+                                             |---------------------------------------------------------|
 ```
 
 ## resources
