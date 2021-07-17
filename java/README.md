@@ -11,6 +11,10 @@
 - [truncation](#truncation)
 - [method](#method)
 - [stack and heap memory](#stack-and-heap-memory)
+- [loops](#loops)
+  * [while](#while)
+  * [for](#for)
+  * [do while](#do-while)
 - [resources](#resources)
 - [terms](#terms)
 ----
@@ -129,6 +133,30 @@ public static void main(String[] args) {     ||--------------------------------|
                                              |                                                         |
                                              |---------------------------------------------------------|
 ```
+
+## loops
+
+### while
+```text
+while(condition){
+    execution block
+}
+```
+
+### for
+```text
+for(initialization; condition; increment or decrement after execution block runs){
+    execution block
+}
+```
+
+### do while
+```text
+do {
+    execution block
+}while(condition)
+```
+
 
 ## resources
 - [jshell](https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8)
