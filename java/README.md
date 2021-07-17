@@ -138,14 +138,14 @@ public static void main(String[] args) {     ||--------------------------------|
 
 ### while
 ```text
-while(condition){
+while(condition) {
     execution block;
 }
 ```
 
 ### for
 ```text
-for(initialization; condition; increment or decrement after execution block runs){
+for(initialization; condition; increment or decrement after execution block runs) {
     execution block;
 }
 ```
