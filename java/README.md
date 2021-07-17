@@ -139,22 +139,22 @@ public static void main(String[] args) {     ||--------------------------------|
 ### while
 ```text
 while(condition){
-    execution block
+    execution block;
 }
 ```
 
 ### for
 ```text
 for(initialization; condition; increment or decrement after execution block runs){
-    execution block
+    execution block;
 }
 ```
 
 ### do while
 ```text
 do {
-    execution block
-}while(condition)
+    execution block;
+} while(condition);
 ```
 
 
