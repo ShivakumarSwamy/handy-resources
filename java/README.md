@@ -18,6 +18,7 @@
 - [javadoc](#javadoc)
 - [class, object and variables](#class-object-and-variables)
   * [defining a class](#defining-a-class)
+- [garbage collection](#garbage-collection)
 - [resources](#resources)
 - [terms](#terms)
 ----
@@ -201,6 +202,9 @@ public class UpperCamelCaseClassName { ---> start with open flower bracket
    
 } ---> ends with closed flower bracket
 ```
+
+## garbage collection
+- searches heap memory, to remove objects that do not have references 
 
 ## resources
 - [jshell](https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8)
