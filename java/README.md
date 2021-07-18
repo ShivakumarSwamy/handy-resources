@@ -15,6 +15,9 @@
   * [while](#while)
   * [for](#for)
   * [do while](#do-while)
+- [javadoc](#javadoc)
+- [class, object and variables](#class-object-and-variables)
+  * [defining a class](#defining-a-class)
 - [resources](#resources)
 - [terms](#terms)
 ----
@@ -166,6 +169,37 @@ do {
  * @author author block tag
  * @see see block tag
  */
+```
+
+## class, object and variables
+- class acts as a template for an object
+- object is a data structure encapsulating the following 
+  * state = variables
+  * behaviour = methods
+
+### defining a class
+```text
+ |--> access modifier
+ |      |--> class keyword, denoting this is a java class 
+ |      |        |--> Class name 
+public class UpperCamelCaseClassName { ---> start with open flower bracket
+    
+    public static final String CLASS_VARIABLE = "CONSTANT_VALUE"; ---> associated with class, which is same for all objects
+    
+    private int instanceVariable; ---> associated with objects, allowing each object to have own state
+    
+    public UpperCamelCaseClassName() {} ---> constructor used to initialize the object, same as class name
+    
+    
+    public void setInstanceVariable(int aInstanceVariableValue) { --> Mutator method, 
+        instanceVariable = aInstanceVariableValue;                    which allows to change the values of variables
+    }
+    
+    public int getInstanceVariable() { --> Accessor method, 
+        return instanceVariable;           which allows to access variables
+    }
+   
+} ---> ends with closed flower bracket
 ```
 
 ## resources
