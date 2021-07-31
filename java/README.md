@@ -19,6 +19,7 @@
 - [class, object and variables](#class-object-and-variables)
   * [defining a class](#defining-a-class)
 - [garbage collection](#garbage-collection)
+- [package, inheritance, interface, polymorphism, abstract class](#package-inheritance-interface-polymorphism-abstract-class)
 - [resources](#resources)
 - [terms](#terms)
 ----
@@ -205,6 +206,26 @@ public class UpperCamelCaseClassName { ---> start with open flower bracket
 
 ## garbage collection
 - searches heap memory, to remove objects that do not have references 
+
+## package, inheritance, interface, polymorphism, abstract class
+
+- package: organize the code, similar to namespaces
+- inheritance: a class inherits all state and behavior of a parent(super) class  
+- interface: acts a contract, and decouple functions
+- polymorphism: many forms an object can take
+- abstract class: sub-class can benefit from the common implementation or either override it.  
+
+```text
+package test.one; // package
+
+interface Owner {} // interface
+
+class abstract Vehicle implements Owner {} // abstract class
+
+class Car extend Vehicle {} // inheritance 
+
+class Boat extend Vehicle {} // boat is exhibiting polymorphism as it can take three forms Owner, Vehicle, and Boat
+```
 
 ## resources
 - [jshell](https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8)
