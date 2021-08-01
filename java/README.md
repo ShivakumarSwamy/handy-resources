@@ -20,6 +20,7 @@
   * [defining a class](#defining-a-class)
 - [garbage collection](#garbage-collection)
 - [package, inheritance, interface, polymorphism, abstract class](#package-inheritance-interface-polymorphism-abstract-class)
+- [error, exception](#error-exception)
 - [resources](#resources)
 - [terms](#terms)
 ----
@@ -225,6 +226,25 @@ class abstract Vehicle implements Owner {} // abstract class
 class Car extend Vehicle {} // inheritance 
 
 class Boat extend Vehicle {} // boat is exhibiting polymorphism as it can take three forms Owner, Vehicle, and Boat
+```
+
+## error, exception
+
+- Error: unrecoverable error for application
+- Exception: recoverable error for application
+  - Checked: the calling method can recover from exception
+  - UnChecked/Runtime: the calling method cannot recover from exception
+```text
+                    +-----------+
+                    | Throwable |
+                    +-----------+                                       +-------------+
+          |---------------||------------------|                 |-------|   Checked   | 
+          |                                   |                 |       +-------------+
+    +-----------+                     +---------------+         |
+    |   Error   |                     |   Exception   |---------|
+    +-----------+                     +---------------+         |       +-------------+
+                                                                |-------|  Unchecked  |
+                                                                        +-------------+
 ```
 
 ## resources
