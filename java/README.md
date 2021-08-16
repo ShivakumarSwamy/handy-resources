@@ -21,6 +21,7 @@
 - [garbage collection](#garbage-collection)
 - [package, inheritance, interface, polymorphism, abstract class](#package-inheritance-interface-polymorphism-abstract-class)
 - [error, exception](#error-exception)
+- [enum](#enum)
 - [resources](#resources)
 - [terms](#terms)
 ----
@@ -245,6 +246,18 @@ class Boat extend Vehicle {} // boat is exhibiting polymorphism as it can take t
     +-----------+                     +---------------+         |       +-------------+
                                                                 |-------|  Unchecked  |
                                                                         +-------------+
+```
+
+## enum
+
+- an enumerated list of constants
+
+```text
+ |--------------- enum keyword
+enum Choice {
+    YES,  --- constant
+    NO
+}
 ```
 
 ## resources
