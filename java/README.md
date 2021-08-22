@@ -22,6 +22,7 @@
 - [package, inheritance, interface, polymorphism, abstract class](#package-inheritance-interface-polymorphism-abstract-class)
 - [error, exception](#error-exception)
 - [enum](#enum)
+- [generics](#generics)
 - [resources](#resources)
 - [terms](#terms)
 ----
@@ -258,6 +259,20 @@ enum Choice {
     YES,  --- constant
     NO
 }
+```
+
+## generics
+
+- No type casting necessary
+- Allows developing generic algorithms
+
+```text
+# generic method example
+                  |------ declare you are using generic type in this method by enclosing with angle brackets  
+                  |                        |--- generic type 
+  private static <T> void displayClassName(T variable) {
+      System.out.println(variable.getClass().getName());
+  }
 ```
 
 ## resources
